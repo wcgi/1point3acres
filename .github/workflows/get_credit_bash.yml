@@ -3,7 +3,7 @@ name: 'get credit everyday'
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 0 * * *'
+    - cron: '17 3 * * *'
 
 jobs:
   run:
