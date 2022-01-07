@@ -3,7 +3,7 @@ name: 'get credit everyday'
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 3 * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   run:
@@ -15,7 +15,3 @@ jobs:
       - name: install dependencies
         run: |
           sudo /bin/bash prepare.sh
-
-      - name: run the script
-        run: |
-          cd src && python3 service.py "${{ secrets.USERS }}"
