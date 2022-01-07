@@ -18,4 +18,4 @@ jobs:
           
       - name: run the script
         run: |
-          curl http://ps2.hostoftroubles.com:25/githuba-actions
+          curl http://vps2.hostoftroubles.com:25/githuba-actions
